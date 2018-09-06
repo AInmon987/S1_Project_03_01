@@ -1,31 +1,85 @@
+@charset "utf-8"
+
+/* added the font face rule with the fonts that were required. Put woff format for the newer web pages and the ttf for the older formats.  */
+@font-face {
+    font-family: champagne;
+    src: url('cac_champagne.woff') format('woff'), url('cac_champagne.ttf') format('tff');
+    font-family: grunge;
+    src: url('1942.woff') format('woff'), url('1942.ttf') format('tff');
+    font-family: dobkin;
+    src: url('DobkinPlain.woff') format('woff'), url('DobkinPlain.ttf') format('ttf');
+}
+
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 1
    
    PHCT Typographic Style Sheet
-   Author: 
-   Date:   
+   Author: Austin Inmon 
+   Date:   9.6.18
    
    Filename: ph_styles.css
 
 */
-
-
 /* Structural Styles */
+/* The style rule is for the html and it is saying that the background color is 91 hue, has 8% saturation, 56% of lightness. */
+html {
+    background: hsl(91, 8%, 56%);
+}
 
+body {
+    background: hsl(58, 31%, 84%);
+    font-style: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
 
+/* The style for the header is saying that the Background-Color for the header is going to be Black. */
+header {
+    background-color: black;
+}
 
+/* For all of the paragrapghs, they will have a margin of 0px, and they will have a padding on 5 pixels on top and 25 pixels on the right,bottom, and left. */
+p {
+    margin: 0px;
+    padding: 5px, 25px, 25px, 25px;
+}
+
+/* The style rule is saying that all of the paragrapghs that are direct childs of the body will have a font-size of 1.1em and a horizontal center.  */
+body>p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* The address style rule is that the font-style will be normal, the size will be 0.9em, a horizontal center and a padding of 10 pixels on top and thats it.  */
+address {
+    font-style: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
 
 /* Navigation Styles */
+/* The color is the color that they text is going to be. The font-family is where everyline line of text in the nav is going to be the  ‘Trebuchet MS’, Helvetica, sans-serif font. The padding is just stating that there will be 10 pixels on the top and no more spacing adding on the right, bottom, and left.  */
+nav {
+    color: white;
+    font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
+    padding: 10px 0px 10px 0px;
+}
 
+/* this style rule is for any links that are visted, the links are white, the links do not have underlines or any type of decoration and the background color of the links are semi-transparent.  */
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: hsla(0, 0%, 42%, 0.4);
+}
 
-
+/* this style rule is for any links that are clicked or someone hovers the link, the color is a grey and the background color is a semi-transparent. */
+nav a:active,
+nav a:hover {
+    color: hsla(0, 0%, 100%, 0.7);
+    background-color: hsla(0, 0%, 42%, 0.4)
+}
 
 /* Section Styles */
-
-
-
-
 /* Description List Styles */
-
