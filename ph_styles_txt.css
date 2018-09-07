@@ -1,6 +1,6 @@
-@charset "utf-8"
+@charset "utf-8";
 
-/* added the font face rule with the fonts that were required. Put woff format for the newer web pages and the ttf for the older formats.  */
+/* Added the font face rule with the fonts that were required. Put woff format for the newer web pages and the ttf for the older formats.  */
 @font-face {
     font-family: champagne;
     src: url('cac_champagne.woff') format('woff'), url('cac_champagne.ttf') format('tff');
@@ -38,10 +38,10 @@ header {
     background-color: black;
 }
 
-/* For all of the paragrapghs, they will have a margin of 0px, and they will have a padding on 5 pixels on top and 25 pixels on the right,bottom, and left. */
+/* For all of the paragraphs, they will have a margin of 0px, and they will have a padding on 5 pixels on top and 25 pixels on the right,bottom, and left. */
 p {
     margin: 0px;
-    padding: 5px, 25px, 25px, 25px;
+    padding: 5px 25px 25px 25px;
 }
 
 /* The style rule is saying that all of the paragrapghs that are direct childs of the body will have a font-size of 1.1em and a horizontal center.  */
@@ -60,13 +60,13 @@ address {
 
 /* Navigation Styles */
 /* The color is the color that they text is going to be. The font-family is where everyline line of text in the nav is going to be the  ‘Trebuchet MS’, Helvetica, sans-serif font. The padding is just stating that there will be 10 pixels on the top and no more spacing adding on the right, bottom, and left.  */
-nav {
+nav a {
     color: white;
     font-family: ‘Trebuchet MS’, Helvetica, sans-serif;
     padding: 10px 0px 10px 0px;
 }
 
-/* this style rule is for any links that are visted, the links are white, the links do not have underlines or any type of decoration and the background color of the links are semi-transparent.  */
+/* This style rule is for any links that are visted, the links are white, the links do not have underlines or any type of decoration and the background color of the links are semi-transparent.  */
 nav a:link,
 nav a:visited {
     color: white;
@@ -74,7 +74,7 @@ nav a:visited {
     background-color: hsla(0, 0%, 42%, 0.4);
 }
 
-/* this style rule is for any links that are clicked or someone hovers the link, the color is a grey and the background color is a semi-transparent. */
+/* This style rule is for any links that are clicked or someone hovers the link, the color is a grey and the background color is a semi-transparent. */
 nav a:active,
 nav a:hover {
     color: hsla(0, 0%, 100%, 0.7);
@@ -82,4 +82,65 @@ nav a:hover {
 }
 
 /* Section Styles */
+/* the section style rule has the font size, font wieght, margin, padding. the size is 3em, margin is 0px, padding is 20 pixels on top, 0 pixels on right, 10 pixels on bottom, and 20 pixels on left. */
+section.playbill h1 {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+    padding: 20px, 0px, 10px, 20px;
+}
+
+/* This id is for the first section and the rule is saying that the background-color is going to be hsl(240, 100%, 88%).  */
+#play1 {
+    background-color: hsl(240, 100%, 88%)
+}
+
+/* This id is for the second section and the rule is saying that the background-color is going to be hsl(25, 88%, 73%). */
+#play2 {
+    background-color: hsl(25, 88%, 73%)
+}
+
+/* This id is for the third section and the rule is saying that the background-color is going to be hsl(0, 100%, 75%). */
+#play3 {
+    background-color: hsl(0, 100%, 75%)
+}
+
+/* This id id for the four section and the rule is saying that the background-color is going to be hsl(296, 86%, 86%). */
+#play4 {
+    background-color: hsl(296, 86%, 86%)
+}
+
+/* This section id is for the primary headings in the first play section and the style rule is saying that the font family is champagne, cursive. */
+section#play1 h1 {
+    font-family: Champagne, cursive;
+}
+
+/* This section id is for the primary headings in the second play section and the style rule is saying that the font family is Grunge, ‘Times New Roman’, Times, serif. */
+section#play2 h1 {
+    font-family: Grunge, ‘Times New Roman’, Times, serif;
+}
+
+/* This section id is for the primary headings in the third play section and the style rule is saying that the font family is Impact, Charcoal, sans-serif.  */
+section#play3 h1 {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+/* This section id is for the primary headings in the fourth play section and the style rule is saying that the font family is Dobkin, cursive.  */
+section#play4 h1 {
+    font-family: Dobkin, cursive;
+}
+
 /* Description List Styles */
+/* The style rule is for the dt element and the rule is saying that the font size is 1.3em, the wieght is bold and the color hsla(0, 0%, 0%, 0.4). */
+dt {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+/* The style rule is for the dt element and the rule is saying that the font size is 1.3em, margin left 0 pixels and the margin-bottom is 10 pixels. */
+dd {
+    font-size: 1.3em;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
