@@ -138,7 +138,7 @@ dt {
     color: hsla(0, 0%, 0%, 0.4);
 }
 
-/* The style rule is for the dt element and the rule is saying that the font size is 1.3em, margin left 0 pixels and the margin-bottom is 10 pixels. */
+/* The style rule is for the dt element and the rule is saying that the font size is 1.3em, margin left 0 pixels and the margin-bottom is 10 pixels .  */
 dd {
     font-size: 1.3em;
     margin-left: 0px;
